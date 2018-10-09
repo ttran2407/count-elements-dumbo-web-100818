@@ -1,5 +1,5 @@
+
 def count_elements(array)
-  def count_elements(array)
   #hash.new(0) create the default any key's value = 0
   # {} just create key's value = nil
   count = Hash.new(0)
@@ -7,6 +7,5 @@ def count_elements(array)
   array.each {|item| count[item] += 1 }
   count
 
-end
 end
  

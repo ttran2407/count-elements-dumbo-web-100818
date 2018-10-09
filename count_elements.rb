@@ -6,7 +6,6 @@ def count_elements(array)
   # if it exists, value +1
   array.each { |element| 
       array_counting_hash[:element] += 1
-  
   }
 
 array_counting_hash

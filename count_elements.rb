@@ -4,6 +4,8 @@ def count_elements(array)
   array_counting_hash = {}
   # loop through array, if hash key is not exits add it to hash with value 1. 
   # if it exists, value +1
+  
+  
   array.each { |element| 
       array_counting_hash[:element] += 1
   }

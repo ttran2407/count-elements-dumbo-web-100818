@@ -1,16 +1,10 @@
 def count_elements(array)
-  # code goes here
-  # create a hash
-  array_counting_hash = {}
-  # loop through array, if hash key is not exits add it to hash with value 1. 
-  # if it exists, value +1
-  
-  
-  array.each { |element| 
-      array_counting_hash[:element] += 1
-  }
+  count = Hash.new(0)
+  array.each {|item| count[item] += 1 }
+  count
 
-array_counting_hash
-  
+  # Fancy
+  # array.each_with_object(Hash.new(0)) do |item, count|
+  #   count[item] += 1
+  # end
 end
- 
